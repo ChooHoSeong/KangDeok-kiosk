@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>KwangDeok_StudyRoom</title>
+        <meta charset="utf-8">
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <link href="res.css" rel="stylesheet" type="text/css">
+        <audio id='audio_in' src="in.mp3"></audio>
+        <audio id='audio_out' src="out.mp3"></audio>
+    </head>
+    <body oncontextmenu = "return false">
+        <div id="box">
+            <div id="left">
+                <div id="nav">
+                    <span id="c_time"></span>
+                    <span id="text">광덕고 자습실 이용현황</span>
+                    <span id="f">학번</span>
+                    <span id="s">시작</span>
+                    <span id="u">경과</span>
+                </div>
+                <div id="val">
+                    <!--<div class="u" h="0" m="1" s="32">
+                        <span class="user">30921</span>
+                        <span class="start_time">오전 12:01:32</span>
+                        <span class="use_time">33333</span>
+                    </div>-->
+                </div>
+            </div>
+            <div id="right">
+                <table>
+            <tr>
+                <td colspan="4" id="re">-----</td>
+            </tr>
+            <tr>
+                <td class="n" onclick="Num(7);sty(event)" onmouseover="sty(event)">7</td>
+                <td class="n" onclick="Num(8);sty(event)" onmouseover="sty(event)">8</td>
+                <td class="n" onclick="Num(9);sty(event)" onmouseover="sty(event)">9</td>
+            </tr>
+            <tr>
+                <td class="n" onclick="Num(4);sty(event)" onmouseover="sty(event)">4</td>
+                <td class="n" onclick="Num(5);sty(event)" onmouseover="sty(event)">5</td>
+                <td class="n" onclick="Num(6);sty(event)" onmouseover="sty(event)">6</td>
+            </tr>
+            <tr>
+                <td class="n" onclick="Num(1);sty(event)" onmouseover="sty(event)">1</td>
+                <td class="n" onclick="Num(2);sty(event)" onmouseover="sty(event)">2</td>
+                <td class="n" onclick="Num(3);sty(event)" onmouseover="sty(event)">3</td>
+            </tr>
+            <tr>
+                <td class="f" id="del" onclick="DEL();sty(event)" onmouseover="sty(event)">삭제</td>
+                <td class="n" onclick="Num(0);sty(event)" onmouseover="sty(event)">0</td>
+                <td class="f" id="acc" onclick="END();sty(event)" onmouseover="sty(event)">확인</td>
+            </tr>
+        </table>
+            </div>
+        </div>
+        
+        
+        
+        
+        <template id="temp">
+            <div class="u" u="0">
+                <span class="user"></span>
+                <span class="start_time"></span>
+                <span class="use_time">0:0</span>
+            </div>
+        
+        
+        </template>
+        
+        <script src="script.js" type="text/javascript"></script>
+        <script src="res.js" type="text/javascript"></script>
+    </body>
+</html>
